@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youssef Chtioui | Ingénieur Énergétique</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header class="main-header">
-    <h1 class="animated-name typing">Youssef Chtioui</h1>
+  <header>
+    <h1>Youssef Chtioui</h1>
+    <p>Ingénieur en efficacité énergétique | Expert HVAC & Systèmes énergétiques</p>
   </header>
 
   <nav>
@@ -22,82 +22,51 @@
     </ul>
   </nav>
 
-  <section class="container hero">
-    <div class="overlay">
-      <div>
-        <h1>Ingénieur en efficacité énergétique</h1>
-        <p>Expert HVAC & systèmes énergétiques durables</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="container about" id="about">
+  <section id="about">
     <h2>À propos de moi</h2>
     <p>Ingénieur diplômé de l'ENIM avec spécialisation en efficacité énergétique, complété par un Master à l'UTBM. Passionné par la transition énergétique et les projets durables.</p>
   </section>
 
-  <section class="container skills" id="skills">
+  <section id="skills">
     <h2>Compétences Techniques</h2>
-    <ul>
-      <li>TRNSYS, MATLAB, Ansys, Modelica</li>
-      <li>AutoCAD, SolidWorks, CATIA, EPLAN</li>
-      <li>Systèmes CVC, audits, gestion énergétique</li>
-    </ul>
+    <p>TRNSYS, MATLAB, Ansys, Modelica<br>
+    AutoCAD, SolidWorks, CATIA, EPLAN<br>
+    Systèmes CVC, audits, gestion énergétique</p>
   </section>
 
-  <section class="container experience" id="experience">
+  <section id="experience">
     <h2>Expériences Professionnelles</h2>
-    <ul class="experience-list">
-      <li><strong>Ingénieur en énergie – CLAAS</strong><br>Suivi conso, ISO 50001, dashboards, optimisation continue</li>
-      <li><strong>Responsable technique – WEDGE</strong><br>Chantiers, études thermiques, RE2020, relation client</li>
-    </ul>
+    <p><strong>Ingénieur en énergie – CLAAS</strong><br>Suivi conso, ISO 50001, dashboards, optimisation continue</p>
+    <p><strong>Responsable technique – WEDGE</strong><br>Chantiers, études thermiques, RE2020, relation client</p>
   </section>
 
-  <section class="container projects" id="projects">
+  <section id="projects">
     <h2>Projets réalisés</h2>
-    <ul>
-      <li>
-        <strong>📊 Optimisation énergétique – Colas</strong>
-        Audit complet, modélisation Pléiades, recommandations
-      </li>
-      <li>
-        <strong>🔋 Système solaire hybride – InnoSol</strong>
-        TRNSYS, conception, dimensionnement
-      </li>
-      <li>
-        <strong>📉 Réduction consommation – CLAAS</strong>
-        Suivi multisite, dashboards Power BI, ISO 50001
-      </li>
-    </ul>
+    <p><strong>🟩 Optimisation énergétique – Colas</strong><br>Audit complet, modélisation Pléiades, recommandations</p>
+    <p><strong>⚡ Système solaire hybride – InnoSol</strong><br>TRNSYS, conception, dimensionnement</p>
+    <p><strong>📉 Réduction consommation – CLAAS</strong><br>Suivi multisite, dashboards Power BI, ISO 50001</p>
   </section>
 
-  <section class="container" id="resources">
+  <section id="resources">
     <h2>Ressources</h2>
-    <div class="links">
-      <a href="docs/CV_Youssef_Chtioui.pdf" download>Télécharger mon CV</a>
-      <a href="https://www.linkedin.com/in/youssef-chtioui-98425a92/" target="_blank">LinkedIn</a>
-      <a href="#contact">Me contacter</a>
-    </div>
+    <p><a href="#">Télécharger mon CV</a> | <a href="https://www.linkedin.com/in/youssef-chtioui-98425a92/">LinkedIn</a> | <a href="#contact">Me contacter</a></p>
   </section>
 
-  <section class="container" id="contact">
+  <section id="contact">
     <h2>Contact</h2>
     <form>
-      <label>Nom</label>
-      <input type="text" name="name" />
-      <label>Email</label>
-      <input type="email" name="email" />
-      <label>Message</label>
-      <textarea name="message" rows="5"></textarea>
+      <label for="name">Nom</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message"></textarea><br>
       <button type="submit">Envoyer</button>
     </form>
   </section>
 
   <footer>
-    © 2025 Youssef Chtioui. Tous droits réservés.
+    &copy; 2025 Youssef Chtioui. Tous droits réservés.
   </footer>
-
-  <button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
-
 </body>
 </html>
