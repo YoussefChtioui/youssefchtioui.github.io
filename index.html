@@ -15,36 +15,53 @@
   <nav>
     <ul>
       <li><a href="#about">À propos</a></li>
+      <li><a href="#goals">Objectifs</a></li>
       <li><a href="#skills">Compétences</a></li>
       <li><a href="#experience">Expérience</a></li>
       <li><a href="#education">Formations</a></li>
       <li><a href="#projects">Projets</a></li>
+      <li><a href="#quote">Citation</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <section id="about" class="section-animate">
     <h2>À propos de moi</h2>
-    <p>Ingénieur diplômé de l'ENIM avec spécialisation en efficacité énergétique, complété par un Master à l'UTBM. Passionné par la transition énergétique et les projets durables.</p>
+    <p>Ingénieur spécialisé dans l'efficacité énergétique et les études CVC. Diplômé de l’ENIM, j’ai complété mon parcours avec un Master à l’UTBM, ce qui m’a permis de renforcer mes compétences dans le domaine de l’énergie électrique. Fort de plusieurs expériences dans l’industrie et le bâtiment, je suis passionné par l’optimisation énergétique, la modélisation thermique et les normes environnementales.</p>
+  </section>
+
+  <section id="goals" class="section-animate">
+    <h2>Objectifs Professionnels</h2>
+    <p>Je souhaite aujourd’hui relever de nouveaux défis dans le domaine de l’efficacité énergétique, afin de développer davantage mes compétences techniques, approfondir mon expertise en gestion de projets et contribuer activement à la transition énergétique des bâtiments et des industries.</p>
   </section>
 
   <section id="skills" class="section-animate">
     <h2>Compétences Techniques</h2>
-    <p>TRNSYS, MATLAB, Ansys, Modelica<br>
-    AutoCAD, SolidWorks, CATIA, EPLAN<br>
-    Systèmes CVC, audits, gestion énergétique</p>
+    <p>
+      <strong>Logiciels :</strong> TRNSYS, MATLAB, Ansys, Modelica, AutoCAD, SolidWorks, CATIA, EPLAN, SeeElectrical, Caneco, Pléiades, HYSYS, FEMM, LabVIEW<br>
+      <strong>Bureautique :</strong> Pack Office, VBA<br>
+      <strong>Compétences métier :</strong> Études CFD / STD, audit énergétique, RE2020 / RT2012, suivi conso, ISO 50001 / 9001, modélisation bâtiment, calcul thermique réglementaire, CEE
+    </p>
   </section>
 
   <section id="experience" class="section-animate">
     <h2>Expériences Professionnelles</h2>
-    <p><strong>Ingénieur en énergie – CLAAS</strong><br>Suivi conso, ISO 50001, dashboards, optimisation continue</p>
-    <p><strong>Responsable technique – WEDGE</strong><br>Chantiers, études thermiques, RE2020, relation client</p>
+    <p><strong>Responsable technique – WEDGE</strong> (2021 – présent)<br>Études thermiques réglementaires, coordination de chantiers, suivi client, RE2020, rénovation énergétique, management d’équipe</p>
+
+    <p><strong>Formateur en diagnostic énergétique – Formation continue</strong> (2020 – 2021)<br>Interventions sur les modules DPE, amiante, gaz, électricité, termites, plomb ; réglementation technique et pratique</p>
+
+    <p><strong>Stagiaire efficacité énergétique – CLAAS</strong> (2019)<br>Suivi des consommations (électricité, gaz, eau), tableaux de bord ISO 50001, conception HVAC, études technico-économiques</p>
+
+    <p><strong>Stagiaire R&D – Orléans</strong> (2018)<br>Développement d’un isolant biosourcé ; simulation Ansys, PHPP, étude de parois thermiques performantes</p>
+
+    <p><strong>Assistant chef de projet – Photovoltaïque, Tunisie</strong> (2015)<br>Analyse de systèmes solaires connectés au réseau, conception d’un suiveur solaire bi-axial</p>
   </section>
 
   <section id="education" class="section-animate">
     <h2>Formations</h2>
-    <p><strong>UTBM – Université de Technologie de Belfort-Montbéliard</strong><br>Master en Énergie Électrique</p>
-    <p><strong>ENIM – École Nationale d'Ingénieurs de Metz</strong><br>Diplôme d’ingénieur en énergétique</p>
+    <p><strong>UTBM</strong> – Master en Énergie Électrique (2019)</p>
+    <p><strong>ENIM</strong> – Diplôme d’ingénieur en énergétique (2018)</p>
+    <p><strong>ESSTHS</strong> – Licence appliquée en énergétique (2015)</p>
   </section>
 
   <section id="projects" class="section-animate">
@@ -54,9 +71,9 @@
     <p><strong>📉 Réduction consommation – CLAAS</strong><br>Suivi multisite, dashboards Power BI, ISO 50001</p>
   </section>
 
-  <section id="resources" class="section-animate">
-    <h2>Ressources</h2>
-    <p><a href="#">Télécharger mon CV</a> | <a href="https://www.linkedin.com/in/youssef-chtioui-98425a92/">LinkedIn</a> | <a href="#contact">Me contacter</a></p>
+  <section id="quote" class="section-animate">
+    <h2>Citation Inspirante</h2>
+    <blockquote>“L'énergie la plus propre est celle que l'on ne consomme pas.”</blockquote>
   </section>
 
   <section id="contact" class="section-animate">
@@ -81,7 +98,12 @@
 
     const isElementInViewport = (el) => {
       const rect = el.getBoundingClientRect();
-      return (rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth));
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
     };
 
     const handleScroll = () => {
