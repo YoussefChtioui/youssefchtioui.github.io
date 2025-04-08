@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -5,53 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Youssef Chtioui | Ingénieur Énergétique</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    :root {
-      --bg: #f3f4f6;
-      --text: #111827;
-      --link: #1d4ed8;
-    }
-    body {
-      background: var(--bg);
-      color: var(--text);
-      transition: background 0.4s ease, color 0.4s ease;
-    }
-    a {
-      color: var(--link);
-      transition: color 0.3s ease;
-    }
-    a:hover {
-      color: #2563eb;
-    }
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1s ease-out forwards;
-    }
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    .fade-delay-1 { animation-delay: 0.3s; }
-    .fade-delay-2 { animation-delay: 0.6s; }
-    .fade-delay-3 { animation-delay: 0.9s; }
-    .fade-delay-4 { animation-delay: 1.2s; }
-    h1::after {
-      content: '|';
-      animation: blink 1s infinite;
-    }
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
-  </style>
 </head>
 <body>
   <div class="hero">
     <div class="overlay">
-      <div class="container fade-in fade-delay-1">
+      <div class="container">
         <h1>Youssef Chtioui</h1>
         <p>Ingénieur en efficacité énergétique | Expert HVAC & Systèmes énergétiques</p>
       </div>
@@ -59,7 +18,7 @@
   </div>
 
   <div class="container">
-    <section class="about fade-in fade-delay-2">
+    <section class="about">
       <h2>À propos de moi</h2>
       <p>
         Ingénieur diplômé de l'ENIM, avec une spécialisation en efficacité énergétique, j'ai complété mon parcours par un Master à l'UTBM en énergie électrique. Mon objectif est de contribuer activement à la transition énergétique à travers des projets innovants et durables.
@@ -69,7 +28,7 @@
       </p>
     </section>
 
-    <section class="skills fade-in fade-delay-3">
+    <section class="skills">
       <h2>Compétences Techniques</h2>
       <ul>
         <li>Simulation & Modélisation : TRNSYS, MATLAB/Simulink, Ansys, Modelica</li>
@@ -79,18 +38,19 @@
       </ul>
     </section>
 
-    <section class="experience fade-in fade-delay-4">
+    <section class="experience">
       <h2>Expériences Professionnelles</h2>
       <ul class="experience-list">
         <li>
           <strong>Ingénieur en énergie – CLAAS (2023 - 2024)</strong><br />
-          • Analyse mensuelle des consommations énergétiques (gaz, électricité, eau)...<br />
+          • Analyse mensuelle des consommations énergétiques<br />
           • Mise en place de solutions ISO 50001<br />
+          • Suivi des indicateurs, modélisation énergétique, reporting KPI
         </li>
         <li>
           <strong>Responsable technique – WEDGE (2022 - 2023)</strong><br />
-          • Coordination technique de projets CVC<br />
-          • Suivi de chantiers et aide à la rénovation énergétique<br />
+          • Supervision et coordination de chantiers<br />
+          • Études de faisabilité, CVC, réglementaires RE2020
         </li>
       </ul>
     </section>
@@ -98,17 +58,17 @@
     <section class="education">
       <h2>Formation</h2>
       <ul>
-        <li><img src="assets/logos/utbm.png" alt="Logo UTBM"> <strong><a href="https://www.utbm.fr" target="_blank">UTBM</a></strong> – Master en Énergie Électrique (2023)</li>
-        <li><img src="assets/logos/enim.png" alt="Logo ENIM"> <strong><a href="https://www.enim.rnu.tn" target="_blank">ENIM</a></strong> – Diplôme d’Ingénieur en Énergétique (2022)</li>
-        <li><img src="assets/logos/ibnghazi.png" alt="Logo CPGE Ibn Ghazi"> <strong><a href="https://www.lyceeibnghazisousse.tn/" target="_blank">CPGE-TSI</a></strong> – Lycée Ibn Ghazi (2015 - 2017)</li>
+        <li><strong><a href="https://www.utbm.fr" target="_blank">UTBM</a></strong> – Master en Énergie Électrique (2023)</li>
+        <li><strong><a href="https://www.enim.rnu.tn" target="_blank">ENIM</a></strong> – Diplôme d’Ingénieur en Énergétique (2022)</li>
+        <li><strong><a href="https://www.lyceeibnghazisousse.tn/" target="_blank">CPGE-TSI</a></strong> – Lycée Ibn Ghazi (2015 - 2017)</li>
       </ul>
     </section>
 
     <section class="projects">
       <h2>Projets réalisés</h2>
       <ul>
-        <li><strong>Optimisation énergétique – Colas</strong><br /> Audit + simulation sous Pléiades</li>
-        <li><strong>TRNSYS solaire hybride – InnoSol</strong><br /> Étude R&D</li>
+        <li><strong>Optimisation énergétique – Colas</strong><br /> Audit, modélisation Pléiades, recommandations</li>
+        <li><strong>Système solaire hybride – InnoSol</strong><br /> Simulation TRNSYS, conception et dimensionnement</li>
       </ul>
     </section>
 
