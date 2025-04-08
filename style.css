@@ -1,28 +1,15 @@
-/* Reset de base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-/* Corps */
 body {
+  margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
   background-color: #f7f9fb;
-  color: #333;
-  padding: 20px;
 }
 
-/* Header */
 header {
-  text-align: center;
-  padding: 40px 20px 10px;
   background-color: #fff;
+  padding: 40px 20px 10px;
+  text-align: center;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  margin-bottom: 30px;
-  position: relative;
-  z-index: 1;
 }
 
 header h1 {
@@ -33,36 +20,40 @@ header h1 {
 
 header p {
   font-size: 1.2em;
-  margin-top: 10px;
   color: #666;
 }
 
-/* Nav */
+nav {
+  background-color: #555;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  animation: slideDown 1s ease-out;
+}
+
 nav ul {
   display: flex;
   justify-content: center;
-  background-color: #fff;
   list-style: none;
+  margin: 0;
   padding: 15px;
-  gap: 25px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+}
+
+nav li {
+  margin: 0 20px;
 }
 
 nav a {
-  color: #0077ff;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #0056b3;
+  color: #00ccff;
 }
 
-/* Sections */
 section {
   max-width: 900px;
   margin: auto;
@@ -80,13 +71,7 @@ section h2 {
   margin-bottom: 20px;
 }
 
-section p {
-  margin-bottom: 15px;
-}
-
-/* Formulaire */
-form input,
-form textarea {
+form input, form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -109,7 +94,6 @@ form button:hover {
   background-color: #0056b3;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 20px;
@@ -117,14 +101,12 @@ footer {
   color: #777;
 }
 
-/* Animation pour le nom */
 @keyframes fadeInSlide {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  0% { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(0); }
 }
