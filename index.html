@@ -8,6 +8,17 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <nav>
+    <ul>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#experience">Expérience</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <div class="hero">
     <div class="overlay">
       <div class="container">
@@ -18,71 +29,34 @@
   </div>
 
   <div class="container">
-    <section class="about">
+    <section class="about" id="about">
       <h2>À propos de moi</h2>
-      <p>
-        Ingénieur diplômé de l'ENIM, avec une spécialisation en efficacité énergétique, j'ai complété mon parcours par un Master à l'UTBM en énergie électrique.
-        Mon objectif est de contribuer activement à la transition énergétique à travers des projets innovants et durables.
-      </p>
-      <p>
-        Mes expériences professionnelles m'ont permis de développer une solide expertise dans le chiffrage de projets, la gestion de chantier, les études CVC,
-        et l'optimisation énergétique. Je suis reconnu pour mon esprit d’analyse, ma rigueur et ma capacité à travailler en équipe.
-      </p>
+      <p>Ingénieur diplômé de l'ENIM avec spécialisation en efficacité énergétique, complété par un Master à l'UTBM. Passionné par la transition énergétique et les projets durables.</p>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
       <h2>Compétences Techniques</h2>
       <ul>
-        <li>Simulation & Modélisation : TRNSYS, MATLAB/Simulink, Ansys, Modelica</li>
-        <li>Conception & DAO : AutoCAD, SolidWorks, CATIA, EPLAN</li>
-        <li>Systèmes électriques et efficacité énergétique</li>
-        <li>Études HVAC, gestion énergétique, suivi de la consommation</li>
+        <li>TRNSYS, MATLAB, Ansys, Modelica</li>
+        <li>AutoCAD, SolidWorks, CATIA, EPLAN</li>
+        <li>Systèmes CVC, audits, gestion énergétique</li>
       </ul>
     </section>
 
-    <section class="experience">
+    <section class="experience" id="experience">
       <h2>Expériences Professionnelles</h2>
       <ul class="experience-list">
-        <li>
-          <strong>Ingénieur en énergie – CLAAS (2023 - 2024)</strong><br />
-          • Analyse des consommations énergétiques mensuelles<br />
-          • Mise en œuvre de projets ISO 50001<br />
-          • Suivi des indicateurs et reporting KPI<br />
-          • Collaboration avec maintenance et production
-        </li>
-        <li>
-          <strong>Responsable technique – WEDGE (2022 - 2023)</strong><br />
-          • Supervision de projets CVC et de rénovation<br />
-          • Études thermiques, RE2020, dimensionnement<br />
-          • Relation client, coordination chantier
-        </li>
+        <li><strong>Ingénieur en énergie – CLAAS</strong><br/>Suivi conso, ISO 50001, dashboards, optimisation continue</li>
+        <li><strong>Responsable technique – WEDGE</strong><br/>Chantiers, études thermiques, RE2020, relation client</li>
       </ul>
     </section>
 
-    <section class="education">
-      <h2>Formation</h2>
-      <ul>
-        <li><strong><a href="https://www.utbm.fr" target="_blank">UTBM</a></strong> – Master en Énergie Électrique (2023)</li>
-        <li><strong><a href="https://www.enim.rnu.tn" target="_blank">ENIM</a></strong> – Diplôme d’Ingénieur en Énergétique (2022)</li>
-        <li><strong><a href="https://www.lyceeibnghazisousse.tn/" target="_blank">CPGE-TSI</a></strong> – Lycée Ibn Ghazi (2015 - 2017)</li>
-      </ul>
-    </section>
-
-    <section class="projects">
+    <section class="projects" id="projects">
       <h2>Projets réalisés</h2>
       <ul>
-        <li>
-          <strong>📊 Optimisation énergétique – Colas</strong>
-          Audit énergétique complet sur un bâtiment tertiaire, modélisation thermique sous Pléiades, recommandations de scénarios de rénovation.
-        </li>
-        <li>
-          <strong>🔧 Système solaire hybride – InnoSol</strong>
-          Simulation dynamique sous TRNSYS, conception et dimensionnement d’un système combinant capteurs solaires, PAC et ballon ECS.
-        </li>
-        <li>
-          <strong>📈 Réduction consommation – CLAAS</strong>
-          Suivi énergétique multisite, dashboards Power BI, intégration dans la politique ISO 50001 du groupe.
-        </li>
+        <li><strong>📊 Optimisation énergétique – Colas</strong>Audit complet, modélisation Pléiades, recommandations</li>
+        <li><strong>🔧 Système solaire hybride – InnoSol</strong>TRNSYS, conception, dimensionnement</li>
+        <li><strong>📈 Réduction consommation – CLAAS</strong>Suivi multisite, dashboards Power BI, ISO 50001</li>
       </ul>
     </section>
 
@@ -93,7 +67,7 @@
       <a href="mailto:youssefchtioui@gmail.com">Me contacter</a>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2>Contact</h2>
       <form action="mailto:youssefchtioui@gmail.com" method="POST" enctype="text/plain">
         <label for="name">Nom</label><br />
@@ -106,6 +80,8 @@
       </form>
     </section>
   </div>
+
+  <button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
 
   <footer>
     &copy; 2025 Youssef Chtioui. Tous droits réservés.
