@@ -199,10 +199,36 @@ footer {
   color: #374151;
   font-size: 0.9rem;
   margin-top: 3rem;
+  position: relative;
 }
 
 img[alt^="Logo"] {
   vertical-align: middle;
   height: 30px;
   margin-right: 10px;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 9999;
+}
+
+#backToTop:hover {
+  background-color: #2563eb;
+  transform: scale(1.1);
 }
