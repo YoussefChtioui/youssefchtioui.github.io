@@ -1,251 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Youssef Chtioui</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+  </nav>
 
-/* === RESET === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <div class="container">
+    <section class="projects">
+      <h2>Mon Portfolio</h2>
+      <ul>
+        <li>
+          <strong>🔋 Étude de faisabilité énergétique – Bâtiment tertiaire</strong>
+          Analyse de l'existant, simulations thermiques (Pléiades), préconisations chiffrées, CEE.
+        </li>
+        <li>
+          <strong>🌞 Système solaire combiné – Projet de fin d'études</strong>
+          Dimensionnement sous TRNSYS, analyse de performance et coût-bénéfice, rédaction d’un rapport technique.
+        </li>
+        <li>
+          <strong>🏭 Suivi énergétique multi-sites – Industrie CLAAS</strong>
+          Développement de KPI dynamiques (Excel / Power BI), reporting ISO 50001.
+        </li>
+        <li>
+          <strong>💨 Rénovation CVC – Collège en Moselle</strong>
+          Étude complète : relevé terrain, sélection équipements, coordination MOE.
+        </li>
+      </ul>
+    </section>
+  </div>
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  scroll-behavior: smooth;
-  background: #f9fafb;
-  color: #111827;
-  line-height: 1.6;
-}
-
-/* === HEADER STICKY WITH ANIMATED NAME === */
-.main-header {
-  position: sticky;
-  top: 0;
-  background-color: #ffffff;
-  padding: 1rem 0;
-  z-index: 2000;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.animated-name {
-  font-size: 2.5rem;
-  font-weight: bold;
-  background: linear-gradient(90deg, #2563eb, #1d4ed8, #2563eb);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 5s linear infinite, fadeSlideDown 1s ease-out;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid #1d4ed8;
-}
-
-@keyframes shine {
-  0% { background-position: -200% center; }
-  100% { background-position: 200% center; }
-}
-
-@keyframes fadeSlideDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blink {
-  0%, 100% { border-color: transparent; }
-  50% { border-color: #1d4ed8; }
-}
-
-.typing {
-  width: 100%;
-  display: inline-block;
-  animation: typing 3s steps(30, end) forwards, blink 1s step-end infinite;
-}
-
-/* === NAVIGATION === */
-nav {
-  background-color: #ffffff;
-  position: sticky;
-  top: 64px;
-  z-index: 999;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  padding: 0.8rem 0;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 2rem;
-}
-
-nav ul li a {
-  text-decoration: none;
-  font-weight: 600;
-  color: #1d4ed8;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #2563eb;
-}
-
-/* === HERO === */
-.hero {
-  height: 60vh;
-  background: url('assets/energy-bg.jpg') center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.overlay {
-  background: rgba(0,0,0,0.5);
-  padding: 2rem;
-  color: #fff;
-}
-
-.overlay h1 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-}
-
-.container {
-  max-width: 960px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-/* === SECTIONS === */
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  position: relative;
-  color: #1f2937;
-}
-
-h2::after {
-  content: '';
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #1d4ed8;
-  margin-top: 6px;
-}
-
-/* === CONTENT === */
-ul {
-  padding-left: 1.2rem;
-}
-
-.projects ul,
-.experience-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.projects li {
-  background: linear-gradient(to right, #ffffff, #f9fafb);
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  border-left: 4px solid #1d4ed8;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.projects li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-}
-
-.projects li strong {
-  font-size: 1.1rem;
-  color: #1d4ed8;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* === LINKS === */
-.links a {
-  display: inline-block;
-  margin-right: 1rem;
-  margin-bottom: 0.5rem;
-  color: #1d4ed8;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.links a:hover {
-  text-decoration: underline;
-  color: #2563eb;
-}
-
-/* === FORM === */
-form {
-  margin-top: 1rem;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 0.6rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-}
-
-button {
-  padding: 0.7rem 1.5rem;
-  background-color: #1d4ed8;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-button:hover {
-  background-color: #2563eb;
-}
-
-/* === BACK TO TOP BUTTON === */
-#backToTop {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: #1d4ed8;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  z-index: 9999;
-}
-
-#backToTop:hover {
-  background-color: #2563eb;
-  transform: scale(1.1);
-}
-
-/* === FOOTER === */
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  background-color: #e5e7eb;
-  color: #374151;
-  font-size: 0.9rem;
-  margin-top: 3rem;
-}
+  <footer>
+    &copy; 2025 Youssef Chtioui. Tous droits réservés.
+  </footer>
+</body>
+</html>
