@@ -5,55 +5,135 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Youssef Chtioui | Ingénieur Énergétique</title>
   <link rel="stylesheet" href="style.css" />
-</head>
+  <style>
+    :root {
+      --bg: #f3f4f6;
+      --text: #111827;
+      --link: #1d4ed8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1f2937;
+        --text: #f9fafb;
+        --link: #93c5fd;
+      }
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+    a {
+      color: var(--link);
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #2563eb;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-delay-1 { animation-delay: 0.3s; }
+    .fade-delay-2 { animation-delay: 0.6s; }
+    .fade-delay-3 { animation-delay: 0.9s; }
+    .fade-delay-4 { animation-delay: 1.2s; }
+    h1::after {
+      content: '|';
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
 <body>
   <div class="hero">
     <div class="overlay">
-      <div class="container">
+      <div class="container fade-in fade-delay-1">
         <h1>Youssef Chtioui</h1>
-        <p>Ingénieur en efficacité énergétique et systèmes CVC</p>
+        <p>Ingénieur en efficacité énergétique | Expert HVAC & Systèmes énergétiques</p>
       </div>
     </div>
   </div>
 
   <div class="container">
-    <section class="about">
+    <section class="about fade-in fade-delay-2">
       <h2>À propos de moi</h2>
       <p>
-        Ingénieur diplômé de l'ENIM avec une spécialisation en efficacité énergétique, j'ai complété mon parcours par une année à l'UTBM en maîtrise de l'énergie électrique. Fort de plusieurs expériences techniques et de terrain, je suis aujourd'hui à la recherche de nouveaux défis dans le secteur de l'énergie.
+        Ingénieur diplômé de l'ENIM, avec une spécialisation en efficacité énergétique, j'ai complété mon parcours par un Master à l'UTBM en énergie électrique. Mon objectif est de contribuer activement à la transition énergétique à travers des projets innovants et durables.
       </p>
       <p>
-        Passionné par les solutions durables, je mets mes compétences en <strong>chiffrage de projets</strong>, <strong>études CVC</strong>, et <strong>optimisation énergétique</strong> au service de projets ambitieux.
+        Mes expériences professionnelles m'ont permis de développer une solide expertise dans le chiffrage de projets, la gestion de chantier, les études CVC, et l'optimisation énergétique. Je suis reconnu pour mon esprit d’analyse, ma rigueur et ma capacité à travailler en équipe.
       </p>
     </section>
 
-    <section class="experience">
+    <section class="skills fade-in fade-delay-3">
+      <h2>Compétences Techniques</h2>
+      <ul>
+        <li>Simulation & Modélisation : TRNSYS, MATLAB/Simulink, Ansys, Modelica</li>
+        <li>Conception & DAO : AutoCAD, SolidWorks, CATIA, EPLAN</li>
+        <li>Systèmes électriques et efficacité énergétique</li>
+        <li>Études HVAC, gestion énergétique, suivi de la consommation</li>
+      </ul>
+    </section>
+
+    <section class="experience fade-in fade-delay-4">
       <h2>Expériences Professionnelles</h2>
       <ul class="experience-list">
         <li>
           <strong>Ingénieur en énergie – CLAAS (2023 - 2024)</strong><br />
-          • Étude de consommation énergétique, mise en œuvre de projets d’optimisation<br />
-          • Modélisation des systèmes et suivi des KPI<br />
-          • Collaboration avec les équipes maintenance, production, QSE
+          • Analyse mensuelle des consommations énergétiques (gaz, électricité, eau) pour les sites de production<br />
+          • Mise en place de solutions d’optimisation énergétique dans le cadre de la certification ISO 50001<br />
+          • Suivi des indicateurs de performance énergétique (KPI) et reporting régulier auprès du management<br />
+          • Réalisation d’études technico-économiques pour les projets d’amélioration continue (CVC, éclairage, procédés industriels)<br />
+          • Collaboration étroite avec les services maintenance, production et qualité pour assurer la fiabilité énergétique des installations
         </li>
         <li>
           <strong>Responsable technique – WEDGE (2022 - 2023)</strong><br />
-          • Supervision des projets de rénovation énergétique<br />
-          • Chiffrage, dimensionnement, et gestion de chantier<br />
-          • Relation client et accompagnement technique
+          • Encadrement et coordination technique de projets de rénovation énergétique en région Grand Est<br />
+          • Réalisation de bilans thermiques, audits réglementaires, et propositions de scénarios d'amélioration<br />
+          • Suivi des chantiers : budget, délais, qualité, relation avec les sous-traitants<br />
+          • Conseil et accompagnement des clients pour les dispositifs d’aides (CEE, MaPrimeRénov’, etc.)<br />
+          • Garant de la conformité aux normes RT2012, RE2020 et autres référentiels techniques
         </li>
         <li>
           <strong>Stage R&D – InnoSol (2021)</strong><br />
-          • Conception et simulation d’un système solaire hybride (TRNSYS)
+          • Développement d’un système solaire thermique hybride pour l’habitat collectif<br />
+          • Simulation dynamique sous TRNSYS avec différentes configurations de stockage et production ECS<br />
+          • Étude d’impact économique et énergétique, rédaction d’un rapport technique complet
+        </li>
+        <li>
+          <strong>Stage – Colas Projects (2020)</strong><br />
+          • Réalisation d’un diagnostic énergétique sur un bâtiment tertiaire de 5 000 m²<br />
+          • Modélisation thermique du bâtiment avec Pléiades + analyse des consommations<br />
+          • Préconisations de rénovation et estimation des gains énergétiques à 5 et 10 ans
         </li>
       </ul>
     </section>
 
-    <div class="links">
+    <section class="education">
+      <h2>Formation</h2>
+      <ul>
+        <li><strong><a href="https://www.utbm.fr" target="_blank">UTBM</a></strong> – Master en Énergie Électrique (2023)</li>
+        <li><strong><a href="https://www.enim.rnu.tn" target="_blank">ENIM</a></strong> – Diplôme d’Ingénieur en Énergétique (2022)</li>
+        <li><strong>CPGE-TSI</strong> – Lycée Ibn Ghazi (2015 - 2017)</li>
+      </ul>
+    </section>
+
+    <section class="links">
+      <h2>Ressources</h2>
       <a href="Youssef.CHTIOUI_CV_FR.pdf" download>Télécharger mon CV</a>
-      <a href="https://www.linkedin.com/in/youssef-chtioui-98425a92/" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/youssef-chtioui-98425a92/" target="_blank">Voir mon LinkedIn</a>
       <a href="mailto:youssefchtioui@gmail.com">Me contacter</a>
-    </div>
+    </section>
   </div>
 
   <footer>
