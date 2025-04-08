@@ -5,6 +5,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youssef Chtioui | Ingénieur Énergétique</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f9fb;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 40px 20px 10px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      color: #0077ff;
+      animation: fadeInSlide 2s ease-out forwards;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #666;
+    }
+
+    nav {
+      background-color: #555;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      animation: slideDown 1s ease-out;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 15px;
+    }
+
+    nav li {
+      margin: 0 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ccff;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      background: #fff;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      color: #222;
+      border-left: 4px solid #0077ff;
+      padding-left: 12px;
+      margin-bottom: 20px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background-color: #0077ff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    form button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    @keyframes fadeInSlide {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -17,6 +130,7 @@
       <li><a href="#about">À propos</a></li>
       <li><a href="#skills">Compétences</a></li>
       <li><a href="#experience">Expérience</a></li>
+      <li><a href="#education">Formations</a></li>
       <li><a href="#projects">Projets</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -38,6 +152,12 @@
     <h2>Expériences Professionnelles</h2>
     <p><strong>Ingénieur en énergie – CLAAS</strong><br>Suivi conso, ISO 50001, dashboards, optimisation continue</p>
     <p><strong>Responsable technique – WEDGE</strong><br>Chantiers, études thermiques, RE2020, relation client</p>
+  </section>
+
+  <section id="education">
+    <h2>Formations</h2>
+    <p><strong>UTBM – Université de Technologie de Belfort-Montbéliard</strong><br>Master en Énergie Électrique</p>
+    <p><strong>ENIM – École Nationale d'Ingénieurs de Metz</strong><br>Diplôme d’ingénieur en énergétique</p>
   </section>
 
   <section id="projects">
