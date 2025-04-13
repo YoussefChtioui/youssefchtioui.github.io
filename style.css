@@ -39,6 +39,12 @@ body {
     transform: scale(1);
   }
 }
+@media (max-width: 500px) {
+  .profile-pic-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+}
 
 
 
