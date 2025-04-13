@@ -3,14 +3,17 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f7f9fb;
 }
-
 .hero-img {
   width: 100%;
   height: auto;
-  display: block;
   max-height: 480px;
   object-fit: cover;
+  border: none;
+  box-shadow: none;
+  border-radius: 0; /* remove rounded edges */
+  display: block;
 }
+
 
 header {
   background-color: #fff;
