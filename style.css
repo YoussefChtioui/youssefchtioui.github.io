@@ -11,14 +11,15 @@ body {
 }
 
 .profile-pic-wrapper {
-  width: 200px;
-  height: 200px;
+  width: 250px; /* au lieu de 200px */
+  height: 250px;
   margin: 0 auto 30px;
   border-radius: 50%;
   border: 5px solid #eee;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
+
 
 .profile-pic {
   width: 100%;
