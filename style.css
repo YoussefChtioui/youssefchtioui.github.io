@@ -5,36 +5,37 @@ body {
 }
 
 header {
-  background-color: #fff;
-  padding: 40px 20px 10px;
+  background-image: url('assets/profile.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 180px 20px 100px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* filtre foncé pour rendre le texte lisible */
+}
+
+header h1,
+header p {
+  position: relative;
+  z-index: 1;
+  animation: fadeInSlide 2s ease-out forwards;
 }
 
 header h1 {
   font-size: 2.8em;
-  color: #333;
-  animation: fadeInSlide 2s ease-out forwards;
+  margin: 0;
 }
 
 header p {
   font-size: 1.2em;
-  color: #666;
-}
-header img {
-  width: 260px;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 30px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  border: 5px solid #ff6347;
-  animation: fadeInSlide 2s ease-out forwards;
-}
-
-header img:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
+  margin-top: 10px;
 }
 
 
